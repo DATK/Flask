@@ -9,6 +9,7 @@ def passwor_shifr(pas):
     c_sh = sh.cezar(text=pas, key=3)
     sh.cls()
     return c_sh
+#это функции ширфрования и дешифрования пароля которые основываются на моих методах шифрования
 
 
 def chek(pas):
@@ -23,7 +24,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "g"
+    return render_template("index.html")
 
 
 @app.route('/reg', methods=["GET", "POST"])
