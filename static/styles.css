@@ -1,0 +1,25 @@
+.main_page{
+    display: flex;
+}
+.header{
+    background-color: rgb(243, 209, 209);
+}
+
+.list_element{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    display: inline;
+}
+
+body{
+    background-image: url("1.jpg");
+}
+
+.men{
+    display: inline;
+
+}
+
+.button {
+    background-color: rgb(11, 9, 9);
+}

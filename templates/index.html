@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}" />
     <title>Main page</title>
 </head>
 <body>
-    <section>
-        <div>
-            <span class="ss">gachi</span>
-        </div>
-    </section>
+  <section class="main_page">
+    <div class="header">
+        <ul class="men">
+          <li><a href="http://localhost:5000/reg" class="button">Sign up</a></li>
+          <li><a href="http://localhost:5000/vhod" class="button">Sign up</a></li>
+        </ul>
+      </div>
+  </section>
 </body>
 </html>

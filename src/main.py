@@ -5,22 +5,20 @@ from flask import Flask, request, redirect
 c = s.Reg_or_chek_reg("data.txt")
 # c.clear_data()
 voshel = False
-result = 'None'
+result = "None"
 html = s.read_html("html1.html")
 html2 = s.read_html("html2.html")
 html3 = s.read_html("html3.html")
-html4=s.read_html("html4.html")
+html4 = s.read_html("html4.html")
 app = Flask(__name__)
 
 
-@app.route('/',methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def mainS():
-   return html4
+    return html4
 
 
-
-
-@app.route('/reg', methods=["GET", "POST"])
+@app.route("/reg", methods=["GET", "POST"])
 def reg_or_input():
     if request.method == "POST":
         username = request.form["username"]
@@ -34,7 +32,7 @@ def reg_or_input():
         return html
 
 
-@app.route('/vhod', methods=["GET", "POST"])
+@app.route("/vhod", methods=["GET", "POST"])
 def vhod():
     if request.method == "POST":
         user = request.form["username"]
@@ -49,7 +47,7 @@ def vhod():
         return html2
 
 
-@app.route('/vhod/move', methods=["GET", "POST"])
+@app.route("/vhod/move", methods=["GET", "POST"])
 def shi():
     global voshel
     global result
@@ -76,7 +74,7 @@ def shi():
         return html3
 
 
-@app.route('/vhod/move/res')
+@app.route("/vhod/move/res")
 def ress():
     global result
     return result

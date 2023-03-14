@@ -45,7 +45,6 @@ class Reg_or_chek_reg:
         except KeyError:
             return False
 
-
 def read_html(file):
     file = "./templates/" + file
     with open(file, "r", encoding="UTF-8") as f:

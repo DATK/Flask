@@ -81,3 +81,4 @@ def cls():
     cezar_shifr.clear()
     cezar_un.clear()
     return cezar_shifr, cezar_un
+
